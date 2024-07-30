@@ -4,6 +4,7 @@
 The **SSN-Core** framework provides a robust and flexible foundation for developing applications that involve sensor data processing, natural language understanding (NLU), text-to-speech (TTS) capabilities, and servo control. This framework is designed for developers looking to create complex systems with integrated sensor and servo operations, alongside advanced NLU and TTS functionalities.
 
 ___
+
 ![img](https://github.com/LoQiseaking69/SSN-core/blob/main/ssn-c.png)
 ___
 
