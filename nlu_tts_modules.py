@@ -1,16 +1,19 @@
-
 from transformers import pipeline
 from gtts import gTTS
 import io
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 class NLUModule:
     def __init__(self):
+        logging.info("Initializing NLU module")
         self.sentiment_pipeline = pipeline("sentiment-analysis")
         self.ner_pipeline = pipeline("ner", grouped_entities=True)
         self.qa_pipeline = pipeline("question-answering")
         self.summarization_pipeline = pipeline("summarization")
         self.translation_pipeline = pipeline("translation_en_to_fr")
-        
+
     def process(self, text, task="sentiment", **kwargs):
         try:
             if task == "sentiment":
@@ -29,6 +32,7 @@ class NLUModule:
                 analysis = {"error": "Unsupported task"}
             return analysis
         except Exception as e:
+            logging.error("Error in NLU processing: %s", str(e))
             return {"error": str(e)}
 
 class TTSModule:
@@ -41,4 +45,5 @@ class TTSModule:
             audio_signal = fp.read()
             return audio_signal
         except Exception as e:
+            logging.error("Error in TTS conversion: %s", str(e))
             return {"error": str(e)}
