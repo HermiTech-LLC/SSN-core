@@ -5,7 +5,7 @@ The **SSN-Core** framework provides a robust and flexible foundation for develop
 
 ___
 
-
+![img](https://github.com/HermiTech-LLC/SSN-core/blob/main/ssn-c.png)
 ___
 
 ## **Installation**
