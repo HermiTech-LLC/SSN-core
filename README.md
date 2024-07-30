@@ -12,7 +12,7 @@ ___
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/LoQiseaking69/SSN-core.git
+   git clone https://github.com/HermiTech-LLC/SSN-core.git
    cd SSN-core
    ```
 
